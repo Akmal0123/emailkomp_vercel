@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 const LeadershipSection = () => {
     const leaders = [
         {
-            name: "Satria Pambingkas",
+            name: "Syafiq Muhammad Musyafa Arsy At-Taufiq",
             position: "Ketua Umum",
-            imageUrl: "/assets/organization/anggota/ketua-wakil/satria.png",
+            imageUrl: "/assets/organization/anggota/ketua-wakil/syafiq'24.JPG",
         },
         {
-            name: "Aisyah Nurlatifah Ramadhanti",
+            name: "Hasna May Tanaya",
             position: "Wakil Ketua Umum",
-        imageUrl: "/assets/organization/anggota/ketua-wakil/aisyah.png",
+            imageUrl: "/assets/organization/anggota/ketua-wakil/may.JPG",
         },
     ];
 
@@ -28,9 +28,8 @@ const LeadershipSection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.2 }}
-                        className={`flex justify-center ${
-                            index === 0 ? "md:-mt-16" : "md:mt-0"
-                        }`}
+                        className={`flex justify-center ${index === 0 ? "md:-mt-16" : "md:mt-0"
+                            }`}
                     >
                         <div className="group relative w-[200px]">
                             {/* Card */}
