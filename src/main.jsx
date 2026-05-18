@@ -5,7 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
-import Index from "./router/Index";
+import Index from "./router/index";
 import Navbar from "./components/Layouts/Navbar";
 
 // Import standard tailwind styles
