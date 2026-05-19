@@ -8,25 +8,19 @@ import "keen-slider/keen-slider.min.css";
 
 const ketua = [
     {
-        name: "Arum Maylan Palupi",
+        name: "Lailla Nurulita Ramadhani",
         position: "Kepala Bidang",
-        imageUrl: "/assets/organization/anggota/sekbend/maylan.png",
+        imageUrl: "/assets/organization/anggota/sekbend/lailla.png",
         isLeader: true,
     },
 ];
 
 const sekretaris = [
     {
-        name: "Mungalimah Thoyyibah",
+        name: "Aldifa Zahrotul Aufar",
         position: "Kepala Divisi",
-        imageUrl: "/assets/organization/anggota/sekbend/alimah.png",
+        imageUrl: "/assets/organization/anggota/sekbend/aldifa.png",
         isLeader: true,
-    },
-    {
-        name: "Rosita Sabrina Filsah ",
-        position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/sekbend/rosita.png",
-        isLeader: false,
     },
     {
         name: "Muhammad Abimanyu Riza",
@@ -35,30 +29,36 @@ const sekretaris = [
         isLeader: false,
     },
     {
-        name: "Aldifa Zahrotul Aufar",
+        name: "Alya Yumna Atiqoh Wibowo",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/sekbend/difa.png",
+        imageUrl: "/assets/organization/anggota/sekbend/alya.png",
+        isLeader: false,
+    },
+    {
+        name: "Nabhan Lintang Herwastyo",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/sekbend/nabhan.png",
         isLeader: false,
     },
 ];
 
 const bendahara = [
     {
-        name: "Regita Aulia Fridawati",
+        name: "Baren Maharani",
         position: "Kepala Divisi",
-        imageUrl: "/assets/organization/anggota/sekbend/regita.png",
+        imageUrl: "/assets/organization/anggota/sekbend/baren.png",
         isLeader: true,
     },
     {
-        name: "Raphael Rhinovaldi Wibisana",
+        name: "Augusta Deren Christian",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/sekbend/raphael.png",
+        imageUrl: "/assets/organization/anggota/sekbend/deren.png",
         isLeader: false,
     },
     {
-        name: "Lailla Nurulita Ramadhani",
+        name: "Shira Artanti Sudarsono",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/sekbend/lailla.png",
+        imageUrl: "/assets/organization/anggota/sekbend/shira.png",
         isLeader: false,
     },
 ];
@@ -216,7 +216,7 @@ const SekBend = () => {
                                 {/* Slider Container */}
                                 <div className="px-4 md:px-8 max-w-7xl mx-auto">
                                     {!isLargeScreen ||
-                                    section.members.length > 5 ? (
+                                        section.members.length > 5 ? (
                                         <div
                                             ref={sliderRef}
                                             className="keen-slider"
@@ -273,11 +273,10 @@ const SekBend = () => {
                                         </div>
                                     ) : (
                                         <div
-                                            className={`flex justify-around ${
-                                                section.members.length < 5
-                                                    ? "flex-wrap"
-                                                    : ""
-                                            }`}
+                                            className={`flex justify-around ${section.members.length < 5
+                                                ? "flex-wrap"
+                                                : ""
+                                                }`}
                                         >
                                             {section.members.map(
                                                 (member, index) => (
@@ -328,7 +327,7 @@ const SekBend = () => {
                                                         (section.members
                                                             .length -
                                                             1) /
-                                                            3
+                                                        3
                                                     )
                                                 ),
                                             ].map((_, idx) => (
@@ -339,11 +338,10 @@ const SekBend = () => {
                                                             idx * 3
                                                         );
                                                     }}
-                                                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                                        currentSlide === idx
-                                                            ? "bg-primary-orange/90 w-4"
-                                                            : "bg-white/30 hover:bg-white/50"
-                                                    }`}
+                                                    className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === idx
+                                                        ? "bg-primary-orange/90 w-4"
+                                                        : "bg-white/30 hover:bg-white/50"
+                                                        }`}
                                                 />
                                             ))}
                                         </div>

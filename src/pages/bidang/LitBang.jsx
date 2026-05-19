@@ -8,87 +8,99 @@ import "keen-slider/keen-slider.min.css";
 
 const ketua = [
     {
-        name: "Naufal Dwi Saputro",
+        name: "Gilang Dafa Ardani",
         position: "Kepala Bidang",
-        imageUrl: "/assets/organization/anggota/litbang/dwi.png",
+        imageUrl: "/assets/organization/anggota/litbang/gilang.png",
         isLeader: true,
     },
 ];
 
 const medinfo = [
     {
-        name: "Naufal Tsaqif Athala Irchamto",
+        name: "Devina Audrey Farrel Dian Krisna",
         position: "Kepala Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/tsaqif.png",
+        imageUrl: "/assets/organization/anggota/litbang/audrey.png",
         isLeader: true,
     },
     {
-        name: "Satrio Aji Pamungkas",
+        name: "Ayu Cahya Putri Andoyo",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/saji.png",
+        imageUrl: "/assets/organization/anggota/litbang/aya.png",
         isLeader: false,
     },
     {
-        name: "Devina Audrey Farrel Dian Krisna",
+        name: "Hana Aulia Rahma",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/audrey.png",
+        imageUrl: "/assets/organization/anggota/litbang/hana.png",
         isLeader: false,
     },
     {
-        name: "Irsyad Nashir Prasetya",
+        name: "Kaishan Arya Setiko",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/irsyad.png",
+        imageUrl: "/assets/organization/anggota/litbang/kaishan.png",
         isLeader: false,
     },
     {
-        name: "Kintan Zealotous Dedi Gunawan",
+        name: "Zidnii Aghniya Rajwa",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/kintan.png",
+        imageUrl: "/assets/organization/anggota/litbang/zidni.png",
         isLeader: false,
     },
     {
-        name: "Faisal Amiruddin",
+        name: "Abrar Alvaro",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/faisal.png",
+        imageUrl: "/assets/organization/anggota/litbang/varo.png",
         isLeader: false,
     },
     {
-        name: "Gilang Dafa Ardan",
+        name: "Ainindra Sasmita Ayu",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/gilang.png",
+        imageUrl: "/assets/organization/anggota/litbang/ayu.png",
+        isLeader: false,
+    },
+    {
+        name: "Fathur Rohman",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/litbang/fathur.png",
+        isLeader: false,
+    },
+    {
+        name: "Risti Maya Fajri",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/litbang/risti.png",
         isLeader: false,
     },
 ];
 
 const rnd = [
     {
-        name: "Muhammad Haekal Alif Putra",
+        name: "Akmal Gelar Maulana Saputro",
         position: "Kepala Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/haekal.png",
+        imageUrl: "/assets/organization/anggota/litbang/akmal.png",
         isLeader: true,
     },
     {
-        name: "Auliya' Nur 'Afifah",
+        name: "Graend Acyeloedvaera Yulianto",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/afifah.png",
+        imageUrl: "/assets/organization/anggota/litbang/graend.png",
         isLeader: false,
     },
     {
-        name: "Baren Maharani",
+        name: "Muhammad Faiz Niwansyah",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/baren.png",
+        imageUrl: "/assets/organization/anggota/litbang/faiz.png",
         isLeader: false,
     },
     {
-        name: "Giancarlo Sindusakti Mahogra",
+        name: "Novendra Anggoro Adji Nugroho",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/carlo.png",
+        imageUrl: "/assets/organization/anggota/litbang/noven.png",
         isLeader: false,
     },
     {
-        name: "Akmal Gelar Maulana Saputro",
+        name: "Galuh Syifa Putri Rusmana",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/litbang/akmal.png",
+        imageUrl: "/assets/organization/anggota/litbang/galuh.png",
         isLeader: false,
     },
 ];
@@ -246,7 +258,7 @@ const LitBang = () => {
                                 {/* Slider Container */}
                                 <div className="px-4 md:px-8">
                                     {!isLargeScreen ||
-                                    section.members.length > 5 ? (
+                                        section.members.length > 5 ? (
                                         <div
                                             ref={sliderRef}
                                             className="keen-slider max-w-7xl mx-auto"
@@ -303,11 +315,10 @@ const LitBang = () => {
                                         </div>
                                     ) : (
                                         <div
-                                            className={`flex justify-around ${
-                                                section.members.length < 5
-                                                    ? "flex-wrap"
-                                                    : ""
-                                            }`}
+                                            className={`flex justify-around ${section.members.length < 5
+                                                ? "flex-wrap"
+                                                : ""
+                                                }`}
                                         >
                                             {section.members.map(
                                                 (member, index) => (
@@ -358,7 +369,7 @@ const LitBang = () => {
                                                         (section.members
                                                             .length -
                                                             1) /
-                                                            3
+                                                        3
                                                     )
                                                 ),
                                             ].map((_, idx) => (
@@ -369,11 +380,10 @@ const LitBang = () => {
                                                             idx * 3
                                                         );
                                                     }}
-                                                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                                        currentSlide === idx
-                                                            ? "bg-primary-orange/90 w-4"
-                                                            : "bg-white/30 hover:bg-white/50"
-                                                    }`}
+                                                    className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === idx
+                                                        ? "bg-primary-orange/90 w-4"
+                                                        : "bg-white/30 hover:bg-white/50"
+                                                        }`}
                                                 />
                                             ))}
                                         </div>

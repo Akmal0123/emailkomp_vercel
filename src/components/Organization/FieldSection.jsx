@@ -6,31 +6,31 @@ const initialFields = [
     {
         id: 1,
         name: "Sekretaris & Bendahara",
-        logo: "/assets/organization/bidang/LogoSekBend.png",
+        logo: "/assets/organization/bidang/sekbend.png",
         link: "/bidang/sekretaris-bendahara",
     },
     {
         id: 2,
         name: "Pengembangan Organisasi",
-        logo: "/assets/organization/bidang/LogoPO.png",
+        logo: "/assets/organization/bidang/pok.png",
         link: "/bidang/pengembangan-organisasi",
     },
     {
         id: 3,
         name: "Kemahasiswaan",
-        logo: "/assets/organization/bidang/LogoMawa.png",
+        logo: "/assets/organization/bidang/mawa.png",
         link: "/bidang/kemahasiswaan",
     },
     {
         id: 4,
         name: "Jaringan",
-        logo: "/assets/organization/bidang/LogoJaringan.png",
+        logo: "/assets/organization/bidang/jaringan.png",
         link: "/bidang/jaringan",
     },
     {
         id: 5,
         name: "Penelitian & Pengembangan",
-        logo: "/assets/organization/bidang/LogoLitBang.png",
+        logo: "/assets/organization/bidang/litbang.png",
         link: "/bidang/penelitian-pengembangan",
     },
 ];

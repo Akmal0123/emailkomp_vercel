@@ -8,69 +8,81 @@ import "keen-slider/keen-slider.min.css";
 
 const ketua = [
     {
-        name: "Muhammad Rajwa Arunarahman",
+        name: "Harits Naufal Ismail",
         position: "Kepala Bidang",
-        imageUrl: "/assets/organization/anggota/po/rajwa.png",
+        imageUrl: "/assets/organization/anggota/po/naufal.png",
         isLeader: true,
     },
 ];
 
 const personalia = [
     {
-        name: "Lafiga Rizki Hanata",
+        name: "Nur Putri Afifah",
         position: "Kepala Divisi",
-        imageUrl: "/assets/organization/anggota/po/figa.png",
+        imageUrl: "/assets/organization/anggota/po/afifah.png",
         isLeader: true,
     },
     {
-        name: "Nur Putri Afifah",
+        name: "Nabela Azzahra Putri",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/po/afifah.png",
+        imageUrl: "/assets/organization/anggota/po/bela.png",
         isLeader: false,
     },
     {
-        name: "Hamka Ibnu Zufar",
+        name: "Candy Seventina Agustin",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/po/hamka.png",
+        imageUrl: "/assets/organization/anggota/po/candy.png",
         isLeader: false,
     },
     {
-        name: "Harits Naufal Ismail",
+        name: "Ahmad Bagas Mahardika",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/po/harits.png",
+        imageUrl: "/assets/organization/anggota/po/bagas.png",
         isLeader: false,
     },
     {
-        name: "Gusti Virdila Arum Pramesti",
+        name: "Faizin Anindito Senoputro",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/po/arum.png",
+        imageUrl: "/assets/organization/anggota/po/dito.png",
+        isLeader: false,
+    },
+    {
+        name: "Kurnia Gilang Atmojo",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/po/gilang'25.png",
+        isLeader: false,
+    },
+    {
+        name: "Fauziy Putra Ananda",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/po/fauziy.png",
         isLeader: false,
     },
 ];
 
 const ekraf = [
     {
-        name: "Restu Pramudya",
+        name: "Suciana Nurika Apriliani",
         position: "Kepala Divisi",
-        imageUrl: "/assets/organization/anggota/po/restu.png",
+        imageUrl: "/assets/organization/anggota/po/cia.png",
         isLeader: true,
     },
     {
-        name: "Dicky Candra Permana",
+        name: "Daffa Harashta Rizky Pratama",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/po/dicky.png",
+        imageUrl: "/assets/organization/anggota/po/daffa.png",
         isLeader: false,
     },
     {
-        name: "Suciana Nurika Apriliani",
+        name: "Ilyas Ikhsanuddin Putra Madani",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/po/cia.png",
+        imageUrl: "/assets/organization/anggota/po/ilyas.png",
         isLeader: false,
     },
     {
-        name: "Deylon Gabriel Augustiano",
+        name: "Isfira Nurul Aini",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/po/deylon.png",
+        imageUrl: "/assets/organization/anggota/po/isfira.png",
         isLeader: false,
     },
 ];
@@ -228,7 +240,7 @@ const PO = () => {
                                 {/* Slider Container */}
                                 <div className="px-4 md:px-8 max-w-7xl mx-auto">
                                     {!isLargeScreen ||
-                                    section.members.length > 5 ? (
+                                        section.members.length > 5 ? (
                                         <div
                                             ref={sliderRef}
                                             className="keen-slider"
@@ -285,11 +297,10 @@ const PO = () => {
                                         </div>
                                     ) : (
                                         <div
-                                            className={`flex justify-around ${
-                                                section.members.length < 5
-                                                    ? "flex-wrap"
-                                                    : ""
-                                            }`}
+                                            className={`flex justify-around ${section.members.length < 5
+                                                ? "flex-wrap"
+                                                : ""
+                                                }`}
                                         >
                                             {section.members.map(
                                                 (member, index) => (
@@ -340,7 +351,7 @@ const PO = () => {
                                                         (section.members
                                                             .length -
                                                             1) /
-                                                            3
+                                                        3
                                                     )
                                                 ),
                                             ].map((_, idx) => (
@@ -351,11 +362,10 @@ const PO = () => {
                                                             idx * 3
                                                         );
                                                     }}
-                                                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                                        currentSlide === idx
-                                                            ? "bg-primary-orange/90 w-4"
-                                                            : "bg-white/30 hover:bg-white/50"
-                                                    }`}
+                                                    className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === idx
+                                                        ? "bg-primary-orange/90 w-4"
+                                                        : "bg-white/30 hover:bg-white/50"
+                                                        }`}
                                                 />
                                             ))}
                                         </div>

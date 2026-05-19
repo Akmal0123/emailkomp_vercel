@@ -8,81 +8,93 @@ import "keen-slider/keen-slider.min.css";
 
 const ketua = [
     {
-        name: "Anisa Fatimah Azzahra",
+        name: "Zahra Raufatul Azizah",
         position: "Kepala Bidang",
-        imageUrl: "/assets/organization/anggota/mawa/nisa.png",
+        imageUrl: "/assets/organization/anggota/mawa/zahra.png",
         isLeader: true,
     },
 ];
 
 const psdm = [
     {
-        name: "Nanang Ardiansyah",
+        name: "Mahesa Rahmad Ramdani",
         position: "Kepala Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/nanang.png",
+        imageUrl: "/assets/organization/anggota/mawa/mahes.png",
         isLeader: true,
     },
     {
-        name: "Mahesa Rahmad Ramdani",
+        name: "Sultanil Aimmah Jaya Wijaya",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/mahesa.png",
+        imageUrl: "/assets/organization/anggota/mawa/jaya.png",
         isLeader: false,
     },
     {
-        name: "Citra Tri Setyaningrum",
+        name: "Aditya Ramadhani",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/citra.png",
+        imageUrl: "/assets/organization/anggota/mawa/adit.png",
         isLeader: false,
     },
     {
-        name: "Muharram Bagas Putra Santoso",
+        name: "Denata Hisahito Arkanta Sandy",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/muha.png",
+        imageUrl: "/assets/organization/anggota/mawa/hito.png",
         isLeader: false,
     },
     {
-        name: "Hasna May Tanaya",
+        name: "Leonard Jonathan Saputra",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/may.png",
+        imageUrl: "/assets/organization/anggota/mawa/leon.png",
         isLeader: false,
     },
     {
-        name: "Zahra Raufatul Azizah",
+        name: "Muhammad Hanif Muzhaffar",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/zahra.png",
+        imageUrl: "/assets/organization/anggota/mawa/hanif.png",
         isLeader: false,
     },
     {
-        name: "Zaskiya Salsabila Quratu'ain Dyahari",
+        name: "Ni'matul Azizah",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/zaskiya.png",
+        imageUrl: "/assets/organization/anggota/mawa/azizah.png",
+        isLeader: false,
+    },
+    {
+        name: "Riza Yuliana Rahmawati",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/mawa/risa.png",
         isLeader: false,
     },
 ];
 
 const minatbakat = [
     {
-        name: "Justin Farrel Hazza Ashari",
+        name: "Ahmad Alaudin Falah",
         position: "Ketua Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/justin.png",
+        imageUrl: "/assets/organization/anggota/mawa/falah.png",
         isLeader: true,
     },
     {
-        name: "Khairuddin Al Fadhilah",
+        name: "Abiyyu Rasya Raihan",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/fadhil.png",
+        imageUrl: "/assets/organization/anggota/mawa/abi.png",
         isLeader: false,
     },
     {
-        name: "Ahmad Alaudin Falah",
+        name: "Devora Sherly Christa Aurelia",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/falah.png",
+        imageUrl: "/assets/organization/anggota/mawa/devora.png",
         isLeader: false,
     },
     {
-        name: "Hanif Khoerul Aqilla",
+        name: "Agatya Driartono",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/mawa/hanif.png",
+        imageUrl: "/assets/organization/anggota/mawa/aga.png",
+        isLeader: false,
+    },
+    {
+        name: "Prima Hadi Ramadhan",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/mawa/prima.png",
         isLeader: false,
     },
 ];
@@ -240,7 +252,7 @@ const Mawa = () => {
                                 {/* Slider Container */}
                                 <div className="px-4 md:px-8">
                                     {!isLargeScreen ||
-                                    section.members.length > 5 ? (
+                                        section.members.length > 5 ? (
                                         <div
                                             ref={sliderRef}
                                             className="keen-slider max-w-7xl mx-auto"
@@ -297,11 +309,10 @@ const Mawa = () => {
                                         </div>
                                     ) : (
                                         <div
-                                            className={`flex justify-around ${
-                                                section.members.length < 5
-                                                    ? "flex-wrap"
-                                                    : ""
-                                            }`}
+                                            className={`flex justify-around ${section.members.length < 5
+                                                ? "flex-wrap"
+                                                : ""
+                                                }`}
                                         >
                                             {section.members.map(
                                                 (member, index) => (
@@ -352,7 +363,7 @@ const Mawa = () => {
                                                         (section.members
                                                             .length -
                                                             1) /
-                                                            3
+                                                        3
                                                     )
                                                 ),
                                             ].map((_, idx) => (
@@ -363,11 +374,10 @@ const Mawa = () => {
                                                             idx * 3
                                                         );
                                                     }}
-                                                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                                        currentSlide === idx
-                                                            ? "bg-primary-orange/90 w-4"
-                                                            : "bg-white/30 hover:bg-white/50"
-                                                    }`}
+                                                    className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === idx
+                                                        ? "bg-primary-orange/90 w-4"
+                                                        : "bg-white/30 hover:bg-white/50"
+                                                        }`}
                                                 />
                                             ))}
                                         </div>

@@ -6,12 +6,12 @@ const LeadershipSection = () => {
         {
             name: "Syafiq Muhammad Musyafa Arsy At-Taufiq",
             position: "Ketua Umum",
-            imageUrl: "/assets/organization/anggota/ketua-wakil/syafiq'24.JPG",
+            imageUrl: "/assets/organization/anggota/ketua-wakil/syafiq'24.png",
         },
         {
             name: "Hasna May Tanaya",
             position: "Wakil Ketua Umum",
-            imageUrl: "/assets/organization/anggota/ketua-wakil/may.JPG",
+            imageUrl: "/assets/organization/anggota/ketua-wakil/may.png",
         },
     ];
 

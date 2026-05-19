@@ -8,63 +8,81 @@ import "keen-slider/keen-slider.min.css";
 
 const ketua = [
     {
-        name: "Nabila Elita Dewi ",
+        name: "Amanda Namira Tsatsabil",
         position: "kepala Bidang",
-        imageUrl: "/assets/organization/anggota/jaringan/elita.png",
+        imageUrl: "/assets/organization/anggota/jaringan/manda.png",
         isLeader: true,
     },
 ];
 
 const sosma = [
     {
-        name: "Muharram Ariel Pamungkas",
+        name: "Raditya Hafid Daniswara",
         position: "kepala Divisi",
-        imageUrl: "/assets/organization/anggota/jaringan/ariel.png",
+        imageUrl: "/assets/organization/anggota/jaringan/radit.png",
         isLeader: true,
     },
     {
-        name: "Raditya Hafid Daniswara",
+        name: "Hilma Aulia",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/jaringan/radit.png",
+        imageUrl: "/assets/organization/anggota/jaringan/hilma.png",
         isLeader: false,
     },
     {
-        name: "Aqila Zaky Ramadhan",
+        name: "Syafiq Syadid Al Azmi",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/jaringan/aqila.png",
+        imageUrl: "/assets/organization/anggota/jaringan/syafiq'25.png",
         isLeader: false,
     },
     {
-        name: "Amanda Namira Tsatsabil",
+        name: "Bala Pradifa Syahda Fulvian",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/jaringan/amanda.JPG",
+        imageUrl: "/assets/organization/anggota/jaringan/bala.png",
+        isLeader: false,
+    },
+    {
+        name: "Nisa Ayu Khoiri Azizah",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/jaringan/nisa.png",
         isLeader: false,
     },
 ];
 
 const humas = [
     {
-        name: "Tengku Kaisar Akbar Yudhatama",
+        name: "Metodius Taraagastya Budiono",
         position: "Kepala Divisi",
-        imageUrl: "/assets/organization/anggota/jaringan/kaisar.png",
+        imageUrl: "/assets/organization/anggota/jaringan/odi.png",
         isLeader: true,
     },
     {
-        name: "Syafiq Muhammad Musyafa Arsy At-Taufiq",
+        name: "Silvia Aprilita Maulidina",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/jaringan/syafiq.png",
+        imageUrl: "/assets/organization/anggota/jaringan/silvia.png",
         isLeader: false,
     },
     {
-        name: "Dodik Bima Satyadi",
+        name: "Gevira Hayatun Nufus",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/jaringan/dodi.png",
+        imageUrl: "/assets/organization/anggota/jaringan/gevira.png",
         isLeader: false,
     },
     {
-        name: "Metodius Taraagastya Budiono",
+        name: "Ilham Nur Mustofa",
         position: "Staff Divisi",
-        imageUrl: "/assets/organization/anggota/jaringan/odi.png",
+        imageUrl: "/assets/organization/anggota/jaringan/ilham.png",
+        isLeader: false,
+    },
+    {
+        name: "Agadira Sultan Marendra",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/jaringan/rendra.png",
+        isLeader: false,
+    },
+    {
+        name: "Mukhammad Fauzan",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/jaringan/fauzan.png",
         isLeader: false,
     },
 ];
@@ -280,8 +298,8 @@ const Jaringan = () => {
                                     ) : (
                                         <div
                                             className={`flex justify-around ${section.members.length < 5
-                                                    ? "flex-wrap"
-                                                    : ""
+                                                ? "flex-wrap"
+                                                : ""
                                                 }`}
                                         >
                                             {section.members.map(
@@ -345,8 +363,8 @@ const Jaringan = () => {
                                                         );
                                                     }}
                                                     className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === idx
-                                                            ? "bg-primary-orange/90 w-4"
-                                                            : "bg-white/30 hover:bg-white/50"
+                                                        ? "bg-primary-orange/90 w-4"
+                                                        : "bg-white/30 hover:bg-white/50"
                                                         }`}
                                                 />
                                             ))}
