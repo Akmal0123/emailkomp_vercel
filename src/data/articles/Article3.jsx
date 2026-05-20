@@ -1,8 +1,10 @@
+import { interviewThumb } from "../../../public/assets/articles/thumbnails";
+
 export const Article3 = {
     id: 3,
     title: "Tips Sukses Menghadapi Coding Interview Perusahaan Teknologi",
     slug: "ace-coding-interview",
-    image: "interview.svg",
+    image: interviewThumb,
     content: `
         <p>Coding interview seringkali dianggap sebagai tahapan yang paling menantang dalam proses rekrutmen perusahaan teknologi. Namun, dengan persiapan yang matang dan metodis, Anda bisa melaluinya dengan sukses.</p>
         <h2>Tahapan Persiapan Terbaik</h2>

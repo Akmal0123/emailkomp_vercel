@@ -92,7 +92,7 @@ const NewsDetail = () => {
             <article className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 mb-12">
                 <div className="relative h-[400px] w-full overflow-hidden">
                     <img
-                        src={`/storage/${news.image}`}
+                        src={news.image?.startsWith('/assets') ? news.image : `/storage/${news.image}`}
                         alt={news.title}
                         className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                     />

@@ -2,6 +2,8 @@ import axios from "axios";
 import { Article1 } from "./data/articles/Article1";
 import { Article2 } from "./data/articles/Article2";
 import { Article3 } from "./data/articles/Article3";
+import { Article4 } from "./data/articles/Article4";
+import { Article5 } from "./data/articles/Article5";
 import { News1 } from "./data/news/News1";
 import { News2 } from "./data/news/News2";
 import { News3 } from "./data/news/News3";
@@ -135,10 +137,11 @@ const mockEvents = [
 
 const mockCategories = [
     { id: 1, name: "Technology", articles_count: 2 },
-    { id: 2, name: "Education", articles_count: 1 }
+    { id: 2, name: "Education", articles_count: 2 },
+    { id: 3, name: "Web Development", articles_count: 1 }
 ];
 
-const mockArticles = [Article1, Article2, Article3];
+const mockArticles = [Article1, Article2, Article3, Article4, Article5];
 
 const mockNewsCategories = [
     { id: 1, name: "Himpunan News", news_count: 2 },

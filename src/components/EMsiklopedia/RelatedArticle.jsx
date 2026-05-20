@@ -45,7 +45,7 @@ const RelatedArticle = () => {
                     >
                         <div className="w-28 h-24 overflow-hidden rounded-lg flex-shrink-0">
                             <img
-                                src={`/storage/${article.image}`}
+                                src={article.image?.startsWith('/assets') ? article.image : `/storage/${article.image}`}
                                 alt={article.title}
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
                             />

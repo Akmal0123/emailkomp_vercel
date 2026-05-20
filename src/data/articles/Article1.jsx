@@ -1,8 +1,10 @@
+import { webDevThumb } from "../../../public/assets/articles/thumbnails";
+
 export const Article1 = {
     id: 1,
     title: "Panduan Lengkap Web Development Modern di 2026",
     slug: "web-dev-trends-2026",
-    image: "web-dev.svg",
+    image: webDevThumb,
     content: `
         <p>Dunia pengembangan web terus berevolusi dengan sangat cepat. Memasuki tahun 2026, arsitektur frontend standalone yang sangat teroptimasi dan serverless menjadi standar utama bagi startup dan enterprise.</p>
         <h2>Mengapa Memilih Frontend Standalone?</h2>

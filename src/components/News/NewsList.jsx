@@ -52,7 +52,7 @@ const NewsList = ({ news = [], loading = false }) => {
                 >
                     <div className="relative h-48 overflow-hidden">
                         <img
-                            src={`/storage/${news.image}`}
+                            src={news.image?.startsWith('/assets') ? news.image : `/storage/${news.image}`}
                             alt={news.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />

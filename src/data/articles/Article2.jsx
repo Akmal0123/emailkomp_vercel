@@ -1,8 +1,10 @@
+import { react19Thumb } from "../../../public/assets/articles/thumbnails";
+
 export const Article2 = {
     id: 2,
     title: "Mastering React 19: Action Hooks dan Performa Ekstrem",
     slug: "mastering-react-19",
-    image: "react-19.svg",
+    image: react19Thumb,
     content: `
         <p>React 19 membawa perubahan fundamental yang membuat proses development menjadi jauh lebih menyenangkan. Dengan diperkenalkannya compiler otomatis dan Action Hooks baru, boilerplate code berkurang drastis.</p>
         <h2>Fitur Kunci React 19</h2>

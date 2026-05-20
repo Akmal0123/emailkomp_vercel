@@ -1,8 +1,10 @@
+import { inagurasiThumb } from "../../../public/assets/news/thumbnails";
+
 export const News3 = {
     id: 3,
     title: "Penerimaan Anggota Baru E-Mailkomp 2026 Resmi Dibuka!",
     slug: "recruitment-emailkomp-2026",
-    image: "inagurasi.svg",
+    image: inagurasiThumb,
     content: `
         <p>Ingin mengembangkan soft skills, menambah relasi, dan berpartisipasi aktif dalam memajukan lingkungan Ilmu Komputer? Open Recruitment Pengurus & Anggota E-Mailkomp 2026 resmi dibuka!</p>
         <h2>Mengapa Bergabung dengan E-Mailkomp?</h2>

@@ -1,8 +1,10 @@
+import { expoThumb } from "../../../public/assets/news/thumbnails";
+
 export const News1 = {
     id: 1,
     title: "E-Mailkomp Sukses Menggelar Expo Teknologi Tahunan 2026",
     slug: "emailkomp-expo-2026",
-    image: "expo.svg",
+    image: expoThumb,
     content: `
         <p>Himpunan Mahasiswa Ilmu Komputer (E-Mailkomp) sukses menyelenggarakan Expo Teknologi Tahunan 2026. Acara yang berlangsung selama tiga hari ini dihadiri oleh lebih dari 1.000 pengunjung dari berbagai kalangan.</p>
         <h2>Pameran Karya Mahasiswa Terbaik</h2>
