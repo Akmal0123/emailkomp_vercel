@@ -1,4 +1,10 @@
 import axios from "axios";
+import { Article1 } from "./data/articles/Article1";
+import { Article2 } from "./data/articles/Article2";
+import { Article3 } from "./data/articles/Article3";
+import { News1 } from "./data/news/News1";
+import { News2 } from "./data/news/News2";
+import { News3 } from "./data/news/News3";
 
 // ==========================================
 // 1. MOCK DATA
@@ -132,135 +138,14 @@ const mockCategories = [
     { id: 2, name: "Education", articles_count: 1 }
 ];
 
-const mockArticles = [
-    {
-        id: 1,
-        title: "Panduan Lengkap Web Development Modern di 2026",
-        slug: "web-dev-trends-2026",
-        image: "web-dev.svg",
-        content: `
-            <p>Dunia pengembangan web terus berevolusi dengan sangat cepat. Memasuki tahun 2026, arsitektur frontend standalone yang sangat teroptimasi dan serverless menjadi standar utama bagi startup dan enterprise.</p>
-            <h2>Mengapa Memilih Frontend Standalone?</h2>
-            <p>Mendeploy web application sebagai standalone client-side (seperti React + Vite) ke platform seperti Vercel atau Netlify memberikan banyak keunggulan:</p>
-            <ul>
-                <li><strong>Kecepatan Load Instan:</strong> Asset disajikan langsung dari Edge CDN terdekat dengan user.</li>
-                <li><strong>Deploy Super Mudah:</strong> Cukup hubungkan repository GitHub, dan deployment selesai secara otomatis (CI/CD).</li>
-                <li><strong>Biaya Rendah:</strong> Tanpa perlu membayar server VPS bulanan untuk backend yang selalu aktif.</li>
-            </ul>
-            <h2>Tren Utama Web Dev di 2026</h2>
-            <p>1. <strong>Edge Rendering:</strong> Menggeser eksekusi logika lebih dekat ke pengguna akhir untuk meminimalkan latensi.</p>
-            <p>2. <strong>AI-Driven UI Components:</strong> Penggunaan tool AI untuk mempermudah prototyping dan penulisan styling adaptif.</p>
-            <p>3. <strong>React 19 & Standalone SPA:</strong> Pemanfaatan compiler modern untuk menghilangkan boilerplate state management.</p>
-        `,
-        category_id: 1,
-        category: { id: 1, name: "Technology" },
-        created_at: "2026-05-10T12:00:00Z",
-        updated_at: "2026-05-12T14:30:00Z"
-    },
-    {
-        id: 2,
-        title: "Mastering React 19: Action Hooks dan Performa Ekstrem",
-        slug: "mastering-react-19",
-        image: "react-19.svg",
-        content: `
-            <p>React 19 membawa perubahan fundamental yang membuat proses development menjadi jauh lebih menyenangkan. Dengan diperkenalkannya compiler otomatis dan Action Hooks baru, boilerplate code berkurang drastis.</p>
-            <h2>Fitur Kunci React 19</h2>
-            <ul>
-                <li><strong>React Compiler:</strong> Tidak perlu lagi menulis useMemo atau useCallback secara manual. Compiler akan mengoptimasi rendering secara otomatis!</li>
-                <li><strong>Actions & useTransition:</strong> Mengelola async state form submission kini menjadi bawaan library React, meminimalkan loading states manual.</li>
-                <li><strong>Document Metadata Support:</strong> Tag title, meta, dan link sekarang bisa dideklarasikan langsung di dalam component tingkat rendah tanpa bantuan third-party library.</li>
-            </ul>
-            <p>Dengan fitur-fitur baru ini, membangun web portal standalone menjadi sangat efisien, cepat, dan terstruktur dengan sangat baik.</p>
-        `,
-        category_id: 1,
-        category: { id: 1, name: "Technology" },
-        created_at: "2026-05-14T09:00:00Z",
-        updated_at: "2026-05-14T09:00:00Z"
-    },
-    {
-        id: 3,
-        title: "Tips Sukses Menghadapi Coding Interview Perusahaan Teknologi",
-        slug: "ace-coding-interview",
-        image: "interview.svg",
-        content: `
-            <p>Coding interview seringkali dianggap sebagai tahapan yang paling menantang dalam proses rekrutmen perusahaan teknologi. Namun, dengan persiapan yang matang dan metodis, Anda bisa melaluinya dengan sukses.</p>
-            <h2>Tahapan Persiapan Terbaik</h2>
-            <ol>
-                <li><strong>Kuasai Struktur Data Dasar:</strong> Pastikan Anda memahami array, linked list, tree, hash map, dan graph secara mendalam.</li>
-                <li><strong>Latih Problem Solving di LeetCode/Hackerrank:</strong> Kerjakan setidaknya 2-3 soal sehari bertemakan string manipulation, binary search, dan dynamic programming.</li>
-                <li><strong>Komunikasi saat Coding:</strong> Selalu jelaskan cara berpikir Anda kepada interviewer saat menulis code. Jangan diam saja!</li>
-            </ol>
-            <p>Ingatlah bahwa interviewer tidak hanya menilai kebenaran sintaks kode Anda, tetapi juga bagaimana cara Anda menganalisis masalah dan bekerja sama.</p>
-        `,
-        category_id: 2,
-        category: { id: 2, name: "Education" },
-        created_at: "2026-05-15T15:20:00Z",
-        updated_at: "2026-05-15T15:20:00Z"
-    }
-];
+const mockArticles = [Article1, Article2, Article3];
 
 const mockNewsCategories = [
     { id: 1, name: "Himpunan News", news_count: 2 },
     { id: 2, name: "Campus Events", news_count: 1 }
 ];
 
-const mockNews = [
-    {
-        id: 1,
-        title: "E-Mailkomp Sukses Menggelar Expo Teknologi Tahunan 2026",
-        slug: "emailkomp-expo-2026",
-        image: "expo.svg",
-        content: `
-            <p>Himpunan Mahasiswa Ilmu Komputer (E-Mailkomp) sukses menyelenggarakan Expo Teknologi Tahunan 2026. Acara yang berlangsung selama tiga hari ini dihadiri oleh lebih dari 1.000 pengunjung dari berbagai kalangan.</p>
-            <h2>Pameran Karya Mahasiswa Terbaik</h2>
-            <p>Tahun ini, Expo menampilkan lebih dari 30 proyek buatan mahasiswa aktif, mulai dari IoT smart system, web application standalone, game interaktif, hingga solusi AI untuk medis.</p>
-            <blockquote>"Kami sangat bangga dengan kreativitas dan inovasi yang ditunjukkan oleh rekan-rekan mahasiswa. Ini membuktikan bahwa ilmu komputer bukan hanya teori, tapi solusi riil," ujar Satria selaku Ketua Himpunan E-Mailkomp.</blockquote>
-            <p>Expo ditutup dengan meriah oleh panggung seni dan pengumuman proyek favorit pengunjung yang dimenangkan oleh tim pengembang 'Smart Trash Sorter' berbasis machine learning.</p>
-        `,
-        news_category_id: 1,
-        category: { id: 1, name: "Himpunan News" },
-        created_at: "2026-05-12T10:00:00Z",
-        updated_at: "2026-05-12T10:00:00Z"
-    },
-    {
-        id: 2,
-        title: "Tim Ilmu Komputer Meraih Juara 1 Hackathon Nasional 2026",
-        slug: "hackathon-victory-2026",
-        image: "hackathon.svg",
-        content: `
-            <p>Kabar membanggakan kembali datang dari perwakilan mahasiswa Ilmu Komputer. Tim E-Mailkomp Elite berhasil menyabet Juara 1 pada ajang Hackathon Nasional 2026 yang diselenggarakan di Jakarta.</p>
-            <h2>Solusi 'Eco-Track' untuk Pengurangan Jejak Karbon</h2>
-            <p>Tim yang beranggotakan tiga orang mahasiswa angkatan 2023 ini merancang sebuah platform terintegrasi bernama 'Eco-Track' yang membantu rumah tangga menghitung dan mengurangi jejak karbon secara gamified.</p>
-            <p>Dengan presentasi yang sangat lugas dan demo prototype fungsional berbasis React standalone, dewan juri sepakat memberikan nilai tertinggi kepada perwakilan E-Mailkomp.</p>
-            <p>Selamat kepada tim pemenang! Semoga prestasi gemilang ini terus menginspirasi mahasiswa lainnya untuk terus berkarya dan berprestasi.</p>
-        `,
-        news_category_id: 2,
-        category: { id: 2, name: "Campus Events" },
-        created_at: "2026-05-16T11:45:00Z",
-        updated_at: "2026-05-16T11:45:00Z"
-    },
-    {
-        id: 3,
-        title: "Penerimaan Anggota Baru E-Mailkomp 2026 Resmi Dibuka!",
-        slug: "recruitment-emailkomp-2026",
-        image: "inagurasi.svg",
-        content: `
-            <p>Ingin mengembangkan soft skills, menambah relasi, dan berpartisipasi aktif dalam memajukan lingkungan Ilmu Komputer? Open Recruitment Pengurus & Anggota E-Mailkomp 2026 resmi dibuka!</p>
-            <h2>Mengapa Bergabung dengan E-Mailkomp?</h2>
-            <p>E-Mailkomp memberikan wadah luar biasa bagi mahasiswa untuk:</p>
-            <ul>
-                <li>Mengasah leadership dan manajemen organisasi.</li>
-                <li>Membangun project teknologi bersama di bawah divisi Jaringan & Litbang.</li>
-                <li>Menghubungkan Anda langsung dengan alumni berprestasi di industri IT nasional.</li>
-            </ul>
-            <p>Segera daftarkan diri Anda sebelum tanggal 30 Mei 2026 melalui tombol pendaftaran di website resmi kami!</p>
-        `,
-        news_category_id: 1,
-        category: { id: 1, name: "Himpunan News" },
-        created_at: "2026-05-18T08:00:00Z",
-        updated_at: "2026-05-18T08:00:00Z"
-    }
-];
+const mockNews = [News1, News2, News3];
 
 // ==========================================
 // 2. FETCH INTERCEPTOR (GLOBAL MOCK API)
