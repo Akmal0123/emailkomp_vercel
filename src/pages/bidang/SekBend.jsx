@@ -35,6 +35,12 @@ const sekretaris = [
         isLeader: false,
     },
     {
+        name: "Andini Purwaningsih",
+        position: "Staff Divisi",
+        imageUrl: "/assets/organization/anggota/sekbend/andin.png",
+        isLeader: false,
+    },
+    {
         name: "Nabhan Lintang Herwastyo",
         position: "Staff Divisi",
         imageUrl: "/assets/organization/anggota/sekbend/nabhan.png",

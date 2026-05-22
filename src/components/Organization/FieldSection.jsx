@@ -11,7 +11,7 @@ const initialFields = [
     },
     {
         id: 2,
-        name: "Pengembangan Organisasi",
+        name: "Pengembangan Organisasi & Kewirausahaan",
         logo: "/assets/organization/bidang/pok.png",
         link: "/bidang/pengembangan-organisasi",
     },
