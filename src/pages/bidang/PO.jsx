@@ -148,7 +148,7 @@ const PO = () => {
                             <div className="absolute -inset-x-8 -inset-y-4 bg-primary-blue/20 blur-3xl -z-10 opacity-50 rounded-full"></div>
                             <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold tracking-tight mb-6">
                                 <span className="inline-block bg-gradient-to-r from-white via-primary-orange/80 to-white bg-clip-text text-transparent animate-gradient-x p-1">
-                                    Pengembangan Organisasi
+                                    Pengembangan Organisasi & Kewirausahaan
                                 </span>
                             </h1>
                         </motion.div>
