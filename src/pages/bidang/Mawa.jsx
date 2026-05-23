@@ -69,7 +69,7 @@ const psdm = [
 const minatbakat = [
     {
         name: "Ahmad Alaudin Falah",
-        position: "Ketua Divisi",
+        position: "Kepala Divisi",
         imageUrl: "/assets/organization/anggota/mawa/falah.png",
         isLeader: true,
     },

@@ -105,7 +105,7 @@ const Footer = () => {
                         Email: emailkomp@d3ti.vokasi.uns.ac.id
                     </p>
                     <p className="text-gray-300 text-sm">
-                        Telepon: +62 857-6413-4767
+                        Telepon: +62 822-3333-8430
                     </p>
                 </motion.div>
             </div>
