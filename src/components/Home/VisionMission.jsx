@@ -15,18 +15,9 @@ const VisionMission = () => {
                         </div>
                         <div className="space-y-4">
                             <p className="text-lg text-gray-600 leading-relaxed p-6 rounded-xl bg-white hover:shadow-lg transition-all duration-300">
-                                Menjadikan EMAILKOMP sebagai wadah untuk
-                                menampung aspirasi seluruh mahasiswa D3 Teknik
-                                Informatika yang didasarkan atas nilai
-                                kebersamaan guna menciptakan mahasiswa yang
-                                unggul, inovatif, kreatif, dan berkarakter.
+                                Menjadikan E-Mailkomp sebagai ruang aspirasi sekaligus kolaborasi antar mahasiswa D3 Teknik Informatika yang didasari dengan kebersamaan, serta berkontribusi nyata dalam pengembangan mahasiswa yang inovatif, responsif, dan berintegritas baik internal maupun eksternal kampus.
                             </p>
-                            <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mt-4">
-                                <div className="p-4 rounded-xl bg-primary-purple hover:shadow-lg transition-all duration-300">
-                                    <p className="text-white font-medium text-center">
-                                        Unggul
-                                    </p>
-                                </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                                 <div className="p-4 rounded-xl bg-primary-purple hover:shadow-lg transition-all duration-300">
                                     <p className="text-white font-medium text-center">
                                         Inovatif
@@ -34,12 +25,12 @@ const VisionMission = () => {
                                 </div>
                                 <div className="p-4 rounded-xl bg-primary-purple hover:shadow-lg transition-all duration-300">
                                     <p className="text-white font-medium text-center">
-                                        Kreatif
+                                        Responsif
                                     </p>
                                 </div>
                                 <div className="p-4 rounded-xl bg-primary-purple hover:shadow-lg transition-all duration-300">
                                     <p className="text-white font-medium text-center">
-                                        Berkarakter
+                                        Berintegritas
                                     </p>
                                 </div>
                             </div>
@@ -56,9 +47,11 @@ const VisionMission = () => {
                         </div>
                         <div className="space-y-3">
                             {[
-                                "Membangun kebersamaan yang kuat di lingkungan mahasiswa EMAILKOMP",
-                                "Mengembangkan EMAILKOMP menjadi sebuah himpunan yang efektif dalam berpartisipasi baik di internal dan eksternal",
-                                "Mendorong partisipasi aktif mahasiswa dalam kegiatan akademik dan non akademik melalui berbagai program yang telah mendukung pengembangan potensi diri dan keterampilan.",
+                                "Menciptakan lingkungan organisasi yang interaktif, kondusif, dan sinergis yang didasarkan kekeluargaan.",
+                                "Membangun lingkup kerja internal organisasi yang profesional dan berkomitmen kuat.",
+                                "Memaksimalkan potensi mahasiswa dalam bidang akademik dan non-akademik melalui berbagai program kerja.",
+                                "Menjadikan E-Mailkomp sebagai himpunan yang inklusif dan kontributif baik internal maupun eksternal.",
+                                "Mengoptimalkan media informasi sebagai bukti dampak positif kepada publik.",
                             ].map((mission, index) => (
                                 <div
                                     key={index}

@@ -111,44 +111,39 @@ const mockStructure = {
 const mockEvents = [
     {
         id: 1,
-        title: "Workshop: Building Standalone Apps with React",
-        date: "2026-06-15",
-        location: "Lab Multimedia & Edge Computing",
-        description: "Pelajari bagaimana merancang, membangun, dan mendeploy aplikasi React + Vite standalone ke Vercel tanpa dependency backend PHP.",
-        image: "techtalk.svg"
-    },
-    {
-        id: 2,
-        title: "E-Mailkomp Annual Gathering 2026",
-        date: "2026-07-20",
-        location: "Villa Kaliurang & Convention Center",
-        description: "Malam keakraban, games, sharing session alumni, dan peresmian kepengurusan baru E-Mailkomp Periode 2026.",
-        image: "gathering.svg"
-    },
-    {
-        id: 3,
-        title: "National Hackathon Competition 2026",
-        date: "2026-08-05",
-        location: "Gedung Auditorium Utama",
-        description: "Kompetisi hackathon tingkat nasional bertemakan 'Smart Technology for Green Environment' yang diadakan oleh E-Mailkomp.",
-        image: "hackathon.svg"
+        title: "Emailkomp Social Program 2",
+        date: "2026-06-19",
+        location: "Kampus Mesen UNS",
+        description: "Satu kantong darahmu bisa menyelamatkan orang lain loh ❤️",
+        image: "donor-darah.png"
     }
 ];
 
-const mockCategories = [
-    { id: 1, name: "Technology", articles_count: 2 },
-    { id: 2, name: "Education", articles_count: 2 },
-    { id: 3, name: "Web Development", articles_count: 1 }
-];
+// Sort newest to oldest
+const mockArticles = [Article1, Article2, Article3, Article4, Article5].sort((a, b) => b.id - a.id);
+const mockNews = [News1, News2, News3].sort((a, b) => b.id - a.id);
 
-const mockArticles = [Article1, Article2, Article3, Article4, Article5];
+const mockCategoriesMap = {};
+mockArticles.forEach(article => {
+    if (article.category) {
+        if (!mockCategoriesMap[article.category.id]) {
+            mockCategoriesMap[article.category.id] = { id: article.category.id, name: article.category.name, articles_count: 0 };
+        }
+        mockCategoriesMap[article.category.id].articles_count += 1;
+    }
+});
+const mockCategories = Object.values(mockCategoriesMap).sort((a, b) => a.id - b.id);
 
-const mockNewsCategories = [
-    { id: 1, name: "Himpunan News", news_count: 2 },
-    { id: 2, name: "Campus Events", news_count: 1 }
-];
-
-const mockNews = [News1, News2, News3];
+const mockNewsCategoriesMap = {};
+mockNews.forEach(news => {
+    if (news.category) {
+        if (!mockNewsCategoriesMap[news.category.id]) {
+            mockNewsCategoriesMap[news.category.id] = { id: news.category.id, name: news.category.name, news_count: 0 };
+        }
+        mockNewsCategoriesMap[news.category.id].news_count += 1;
+    }
+});
+const mockNewsCategories = Object.values(mockNewsCategoriesMap).sort((a, b) => a.id - b.id);
 
 // ==========================================
 // 2. FETCH INTERCEPTOR (GLOBAL MOCK API)
