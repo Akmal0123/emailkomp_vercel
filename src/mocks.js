@@ -109,19 +109,12 @@ const mockStructure = {
 };
 
 const mockEvents = [
-    {
-        id: 1,
-        title: "Emailkomp Social Program 2",
-        date: "2026-06-19",
-        location: "Kampus Mesen UNS",
-        description: "Satu kantong darahmu bisa menyelamatkan orang lain loh ❤️",
-        image: "donor-darah.png"
-    }
+
 ];
 
 // Sort newest to oldest
 const mockArticles = [Article1, Article2, Article3, Article4, Article5].sort((a, b) => b.id - a.id);
-const mockNews = [News1, News2, News3].sort((a, b) => b.id - a.id);
+const mockNews = [].sort((a, b) => b.id - a.id);
 
 const mockCategoriesMap = {};
 mockArticles.forEach(article => {

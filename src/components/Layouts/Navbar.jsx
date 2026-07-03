@@ -30,6 +30,21 @@ const Navbar = () => {
         { path: "/berita", label: "Berita" },
     ];
 
+    const handleWhatsAppClick = (e) => {
+        e.preventDefault();
+        const phoneNumber = "6282233338430";
+        // Cek apakah pengguna menggunakan perangkat mobile
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        
+        // Jika mobile, arahkan ke aplikasi WhatsApp (wa.me)
+        // Jika desktop, arahkan ke WhatsApp Web
+        const url = isMobile 
+            ? `https://wa.me/${phoneNumber}` 
+            : `https://web.whatsapp.com/send?phone=${phoneNumber}`;
+            
+        window.open(url, "_blank", "noopener,noreferrer");
+    };
+
     return (
         <>
             <nav
@@ -75,12 +90,13 @@ const Navbar = () => {
 
                         {/* Contact Button - Right */}
                         <div className="hidden md:flex flex-shrink-0 items-center">
-                            <NavLink
-                                to="/contact"
+                            <a
+                                href="https://wa.me/6282233338430"
+                                onClick={handleWhatsAppClick}
                                 className="px-6 py-2 bg-primary-orange text-white rounded-full font-medium text-sm hover:shadow-lg transition-all duration-300"
                             >
                                 Kontak
-                            </NavLink>
+                            </a>
                         </div>
 
                         {/* Mobile Menu Button */}
@@ -131,13 +147,16 @@ const Navbar = () => {
                                     {link.label}
                                 </NavLink>
                             ))}
-                            <NavLink
-                                to="/contact"
+                            <a
+                                href="https://wa.me/6282233338430"
+                                onClick={(e) => {
+                                    handleWhatsAppClick(e);
+                                    setIsOpen(false);
+                                }}
                                 className="block px-4 py-3 mt-2 bg-gradient-to-r from-primary-orange to-primary-blue text-white rounded-lg font-medium text-base transition-colors duration-300"
-                                onClick={() => setIsOpen(false)}
                             >
                                 Kontak
-                            </NavLink>
+                            </a>
                         </div>
                     </div>
                 )}
