@@ -110,7 +110,14 @@ const mockStructure = {
 };
 
 const mockEvents = [
-
+    {
+        id: 1,
+        title: "Smart IT Festival",
+        date: "Coming Soon",
+        location: "Coming Soon",
+        description: "Siap untuk jadi bagian dari festival IT paling seru? Pastikan kamu menjadi yang pertama tahu info pendaftaran dan kejutan menarik lainnya. Follow sekarang juga di @smartitfestofficial!",
+        image: "poster_sif.png"
+    }
 ];
 
 // Sort newest to oldest
