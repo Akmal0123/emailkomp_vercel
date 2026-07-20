@@ -113,10 +113,19 @@ const mockEvents = [
     {
         id: 1,
         title: "Smart IT Festival",
-        date: "Coming Soon",
-        location: "Coming Soon",
+        date: "TBA",
+        location: "TBA",
         description: "Siap untuk jadi bagian dari festival IT paling seru? Pastikan kamu menjadi yang pertama tahu info pendaftaran dan kejutan menarik lainnya. Follow sekarang juga di @smartitfestofficial!",
         image: "poster_sif.png"
+    },
+
+    {
+        id: 2,
+        title: "Prodi's Time",
+        date: "13 Agustus 2026",
+        location: "TBA",
+        description: "Selamat datang mahasiswa baru D4 Teknologi Informasi & Kecerdasan Artifisial (STARTIKAI) UNS 2026 dari semua jalur masuk! Selamat bergabung di keluarga besar kami. Yuk, bersiap seru-seruan menjelajahi dunia teknologi dan bikin banyak pengalaman berharga bareng di kampus!",
+        image: "prodis_time.png"
     }
 ];
 
