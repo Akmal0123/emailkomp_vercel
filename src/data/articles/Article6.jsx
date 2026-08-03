@@ -13,15 +13,15 @@ export const Article6 = {
         <p>Di tahun 2026, AI bukan lagi sekadar fitur tambahan dalam dunia web development. Ia sudah menjadi tulang punggung dari seluruh siklus pengembangan, mulai dari baris pertama kode hingga halaman yang muncul di layar penggunamu. Tapi apa sebenarnya yang berubah, dan seberapa besar dampaknya?</p>
 
         <div class="grid grid-cols-3 gap-4 my-6 text-center">
-            <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                 <p class="text-3xl font-bold text-primary-orange">84%</p>
                 <p class="text-sm text-gray-500 mt-2">Developer laporkan produktivitas meningkat berkat AI tools</p>
             </div>
-            <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                 <p class="text-3xl font-bold text-primary-orange">71,7%</p>
                 <p class="text-sm text-gray-500 mt-2">Website baru dibangun dengan kombinasi kode manusia + AI</p>
             </div>
-            <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                 <p class="text-3xl font-bold text-primary-orange">16%</p>
                 <p class="text-sm text-gray-500 mt-2">Pertumbuhan lapangan kerja web developer dalam 10 tahun ke depan</p>
             </div>
@@ -151,10 +151,10 @@ export const Article6 = {
 
         <br/>
 
-        <p>Web development di 2026 bukan tentang siapa yang bisa menulis kode paling banyak, tapi siapa yang bisa membangun pengalaman terbaik dengan cara yang paling cerdas. Dan AI adalah kuncinya.</p>
+        <p><strong>Web development di 2026 bukan tentang siapa yang bisa menulis kode paling banyak, tapi siapa yang bisa membangun pengalaman terbaik dengan cara yang paling cerdas. Dan AI adalah kuncinya.</strong></p>
     `,
     category_id: 3,
     category: { id: 3, name: "Web Development" },
     created_at: "2026-07-06T10:00:00Z",
-    updated_at: "2026-07-06T10:00:00Z"
+    updated_at: "2026-08-04T10:24:28Z"
 };

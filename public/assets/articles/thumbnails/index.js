@@ -5,3 +5,4 @@ export const aiThumb = "/assets/articles/thumbnails/ai.png";
 export const frameworkThumb = "/assets/articles/thumbnails/Framework.png";
 export const WebDevThumb = "/assets/articles/thumbnails/webDEV.png";
 export const portoThumb = "/assets/articles/thumbnails/portoThumb.png";
+export const openCode = "/assets/articles/thumbnails/opencode.png";
