@@ -115,8 +115,8 @@ const mockEvents = [
     {
         id: 1,
         title: "Smart IT Festival",
-        date: "TBA",
-        location: "TBA",
+        date: "19 September 2026",
+        location: "Balai Kota Surakarta",
         description: "Siap untuk jadi bagian dari festival IT paling seru? Pastikan kamu menjadi yang pertama tahu info pendaftaran dan kejutan menarik lainnya. Follow sekarang juga di @smartitfestofficial!",
         image: "poster_sif.png"
     },
