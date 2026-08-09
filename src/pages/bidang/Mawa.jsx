@@ -198,7 +198,7 @@ const Mawa = () => {
                     {/* Bidang Sections */}
                     {[
                         {
-                            title: "Pengembangan Sumber Daya Manusia",
+                            title: "Pengembangan Sumber Daya Mahasiswa",
                             members: psdm,
                         },
                         {
