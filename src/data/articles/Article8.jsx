@@ -1,10 +1,10 @@
-import { openCode } from "../../../public/assets/articles/thumbnails";
+import { opencodeThumb } from "../../../public/assets/articles/thumbnails";
 
 export const Article8 = {
     id: 8,
     title: "OpenCode: AI Coding Agent Open Source yang Wajib Dicoba Developer",
     slug: "opencode-ai-coding-agent-open-source",
-    image: openCode,
+    image: opencodeThumb,
     content: `
         <p>Bayangkan kamu punya asisten coding pribadi yang bisa membaca kode proyekmu, menulis file baru, menjalankan perintah terminal, bahkan melakukan debugging, semuanya langsung dari terminal atau desktop. Kedengarannya futuristik? Tidak lagi. Perkenalkan <strong>OpenCode</strong>, AI coding agent open source yang sedang naik daun di kalangan developer seluruh dunia.</p>
 
