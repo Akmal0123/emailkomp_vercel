@@ -8,3 +8,4 @@ export const portoThumb = "/assets/articles/thumbnails/portoThumb.png";
 export const opencodeThumb = "/assets/articles/thumbnails/opencode.png";
 export const pwaWeb = "/assets/articles/thumbnails/pwaWeb.png";
 export const gitCollabThumb = "/assets/articles/thumbnails/gitCollab.png";
+export const topLanguageThumb = "/assets/articles/thumbnails/topLanguage-thumb.webp";
