@@ -10,3 +10,4 @@ export const pwaWeb = "/assets/articles/thumbnails/pwaWeb.png";
 export const gitCollabThumb = "/assets/articles/thumbnails/gitCollab.png";
 export const topLanguageThumb = "/assets/articles/thumbnails/topLanguage-thumb.webp";
 export const browserPipelineThumb = "/assets/articles/thumbnails/browserPipeline.png";
+export const internetThumb = "/assets/articles/thumbnails/internet.jpg";

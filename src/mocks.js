@@ -14,6 +14,7 @@ import { Article9 } from "./data/articles/Article9";
 import { Article10 } from "./data/articles/Article10";
 import { Article11 } from "./data/articles/Article11";
 import { Article12 } from "./data/articles/Article12";
+import { Article13 } from "./data/articles/Article13";
 
 // ==========================================
 // 1. MOCK DATA
@@ -136,7 +137,7 @@ const mockEvents = [
 ];
 
 // Sort newest to oldest
-const mockArticles = [Article1, Article2, Article3, Article4, Article5, Article6, Article7, Article8, Article9, Article10, Article11, Article12].sort((a, b) => b.id - a.id);
+const mockArticles = [Article1, Article2, Article3, Article4, Article5, Article6, Article7, Article8, Article9, Article10, Article11, Article12, Article13].sort((a, b) => b.id - a.id);
 const mockNews = [].sort((a, b) => b.id - a.id);
 
 const mockCategoriesMap = {};
