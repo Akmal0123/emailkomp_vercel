@@ -14,3 +14,4 @@ export const internetThumb = "/assets/articles/thumbnails/internet.jpg";
 export const turingChatgptThumb = "/assets/articles/thumbnails/turingChatgpt.png";
 export const aiCodingStressThumb = "/assets/articles/thumbnails/aiCodingStress.png";
 export const aiHallucinationThumb = "/assets/articles/thumbnails/aiHallucination.png";
+export const caraKerjaLLMThumb = "/assets/articles/thumbnails/caraKerjaLLM.png";
